@@ -16,6 +16,21 @@ salary.addEventListener('input', function() {
     output.textContent = salary.value;
 });
 
+//UC2 - Validate Email
+const email = document.querySelector('#email');
+const emailerror = document.querySelector('.email-error');
+email.addEventListener('input', function () {
+    let emailRegex = RegExp('^([A-Za-z]{3,}([.a-z]*)[@][a-z]{2,}[.][a-z]{2,}([.a-z]*))$');
+    if (emailRegex.test(email.value)) {
+        emailerror.textContent = "";
+    }
+
+    else {
+        emailerror.textContent = "Email is Incorrect";
+    }
+
+});
+
 function submitMsg() {
     alert("Form Submitted Successfully");
 }

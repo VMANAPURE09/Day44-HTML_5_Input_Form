@@ -1,4 +1,4 @@
-htm, input {
+html, input {
     front-family: sans-serif;
 }
 
@@ -9,6 +9,7 @@ body{
     padding: 2em;
 }
 .headerContainer{
+
     display: flex;
     flex-flow: column wrap;
     font-weight: bold;
